@@ -1,0 +1,9 @@
+{
+	"name": "aktCodeRepositoryDataFactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fb5bf0af-ecf8-4b32-ba54-47f6ac50fd73",
+		"tenantId": "e8df5b5e-2064-40d4-b6f5-82e3ec0eb8a9"
+	}
+}
