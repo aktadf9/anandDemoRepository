@@ -1,0 +1,45 @@
+{
+	"name": "testDatasetforEmpData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aktLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "scottEmpData.csv",
+				"folderPath": "input",
+				"container": "aktadfcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "EMPNO",
+				"type": "String"
+			},
+			{
+				"name": "INITCAP(ENAME)",
+				"type": "String"
+			},
+			{
+				"name": "INITCAP(JOB)",
+				"type": "String"
+			},
+			{
+				"name": "SAL",
+				"type": "String"
+			},
+			{
+				"name": "DEPTNO",
+				"type": "String"
+			}
+		]
+	}
+}
